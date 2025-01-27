@@ -1,0 +1,59 @@
+//Exercício: Cálculo de Média Ponderada e Aprovação
+Você deve criar um programa que calcule a média ponderada de um aluno, levando em consideração duas notas, onde a primeira nota tem peso 3 e a segunda nota tem peso 7. O programa também deve verificar se o aluno foi aprovado ou reprovado com base na média final.
+
+Requisitos:
+
+Solicite ao usuário para digitar as duas notas do aluno.
+
+A primeira nota deve ser multiplicada por 3 e a segunda por 7 para calcular a média ponderada.
+ 
+Após calcular a média ponderada, o programa deve determinar se o aluno foi aprovado ou reprovado:
+
+Se a média for maior ou igual a 7, o aluno foi aprovado.
+Se a média for menor que 7, o aluno foi reprovado.
+Saídas esperadas:
+
+O programa deve mostrar a média ponderada do aluno.
+O programa deve informar se o aluno foi aprovado ou reprovado com base na média calculada.
+Exemplo de Entrada e Saída:
+Exemplo 1:
+Entrada:
+Nota 1: 8
+Nota 2: 6
+Saída:
+"Média Ponderada: 6.8"
+"Aluno Reprovado"
+Exemplo 2:
+Entrada:
+Nota 1: 7
+Nota 2: 9
+Saída:
+"Média Ponderada: 8.2"
+"Aluno Aprovado"//
+
+
+
+public class Main {
+    public static void main(String[] args){
+        double nota1;
+        double nota2;
+        double media;
+      Scanner scanner = new Scanner(System.in);
+      System.out.println("digite sua primeira nota");
+      nota1 = scanner.nextDouble();
+      scanner.nextLine();
+
+      System.out.println("digite a segunda nota");
+      nota2 = scanner.nextDouble();
+
+      media = ((nota1*3) + (nota2 *7))/(3+7);
+    System.out.println(" sua media final foi " + media);
+
+    if (media >=7){
+        System.out.println(" voce foi aprovado");
+    }
+    else {
+        System.out.println(" vc foi reprovado!");
+    }
+
+
