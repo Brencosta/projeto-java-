@@ -1,19 +1,17 @@
-# Calculadora Simples em Java
+# Aprendizado de Java
 
-Este é um projeto simples de uma calculadora feita em Java. A calculadora permite que o usuário realize as seguintes operações:
+Este repositório contém projetos e exercícios que estou desenvolvendo enquanto aprendo a linguagem de programação **Java**. O objetivo é praticar e aplicar os conceitos que estou estudando, como **métodos**, **classes**, **objetos**, **condicionais**, **loops**, e **entrada de dados**.
 
-- Soma
-- Subtração
-- Multiplicação
-- Divisão
-- Raiz quadrada
+## Objetivo
+O objetivo principal deste repositório é registrar o meu progresso enquanto aprendo Java. Cada projeto é uma oportunidade de aplicar os conceitos que estou absorvendo e melhorar minhas habilidades como programador. À medida que avanço nos estudos, os projetos e códigos serão atualizados para refletir o que aprendi.
 
-## Funcionalidades:
-- O usuário entra com dois números.
-- O usuário escolhe a operação desejada (soma, subtração, multiplicação, divisão ou raiz quadrada).
-- O resultado é mostrado no console.
+## Como funciona
+Cada projeto no repositório foca em um conceito específico que estou aprendendo. A ideia é aplicar esses conceitos em exemplos práticos para entender como usá-los no desenvolvimento de software real.
 
-## Como Usar:
-1. Baixe ou clone este repositório.
-2. Compile e execute o arquivo `Main.java`.
-3. Digite os números e escolha a operação desejada.
+## Tecnologias usadas
+- **Java** (linguagem de programação)
+- **IDE**: (Exemplo: IntelliJ IDEA, Eclipse, etc.)
+
+---
+
+### 💡 *Estou apenas começando a aprender Java e este repositório é uma forma de acompanhar o meu progresso. Sinta-se à vontade para sugerir melhorias ou contribuir!*
