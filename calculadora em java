@@ -1,0 +1,93 @@
+import java.util.Scanner;
+
+public class Calculadora {
+    private double numero1;
+    private double numero2;
+
+    public Calculadora(double numero1, double numero2) {
+        this.numero1 = numero1;
+        this.numero2 = numero2;
+    }
+
+   
+    public double somar() {
+        return numero1 + numero2;
+    }
+
+    
+    public double subtrair() {
+        return numero1 - numero2;
+    }
+
+    
+    public double multiplicar() {
+        return numero1 * numero2;
+    }
+
+   
+    public double dividir() {
+        if (numero2 == 0) {
+            System.out.println("Erro: Divisão por zero não é permitida!");
+            return Double.NaN;  // Retorna 'NaN' (Not a Number) em caso de erro
+        }
+        return numero1 / numero2;
+    }
+
+   
+    public double raiz() {
+        return Math.sqrt(numero1);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro número: ");
+        double numero1 = scanner.nextDouble();
+
+        
+        System.out.print("Digite o segundo número: ");
+        double numero2 = scanner.nextDouble();
+
+        
+        Calculadora calc = new Calculadora(numero1, numero2);
+
+        
+        System.out.println("\nEscolha a operação:");
+        System.out.println("1 - Soma");
+        System.out.println("2 - Subtração");
+        System.out.println("3 - Multiplicação");
+        System.out.println("4 - Divisão");
+        System.out.println("5 - Raiz quadrada");
+
+        
+        int escolha = scanner.nextInt();
+
+        
+        switch (escolha) {
+            case 1:
+                System.out.println("Resultado da soma: " + calc.somar());
+                break;
+            case 2:
+                System.out.println("Resultado da subtração: " + calc.subtrair());
+                break;
+            case 3:
+                System.out.println("Resultado da multiplicação: " + calc.multiplicar());
+                break;
+            case 4:
+                double resultadoDivisao = calc.dividir();
+                if (!Double.isNaN(resultadoDivisao)) {
+                    System.out.println("Resultado da divisão: " + resultadoDivisao);
+                }
+                break;
+            case 5:
+                System.out.println("Resultado da raiz quadrada: " + calc.raiz());
+                break;
+            default:
+                System.out.println("Opção inválida! Por favor, escolha um número de 1 a 5.");
+        }
+
+        scanner.close();
+    }
+}
