@@ -10,7 +10,7 @@ Cada projeto no repositório foca em um conceito específico que estou aprendend
 
 ## Tecnologias usadas
 - **Java** (linguagem de programação)
-- **IDE**: (Exemplo: IntelliJ IDEA, Eclipse, etc.)
+- **IDE**: ( IntelliJ IDEA.)
 
 ---
 
